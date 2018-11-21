@@ -13,7 +13,7 @@ class App extends Component {
 }
 
 var clickme = async function() {
-  await ecc.PrivateKey.randomKey().then( result => {
+  ecc.PrivateKey.randomKey().then( result => {
     console.log('Private Key = ' + result);
   })
   
